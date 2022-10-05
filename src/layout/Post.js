@@ -50,7 +50,7 @@ function Post() {
 					</ul>
                     <div className="share-post-box">
 					    <ul className="share-box">
-						    <li><a className="facebook" href="#"><i className="fa fa-facebook"></i><span>Share on Facebook</span></a></li>
+						    <li><a className="facebook" href={`${"https://www.facebook.com/dialog/share?app_id=967748097491075&display=popup&href=https://enugumonitor.com/content/"+post.slug+"&redirect_uri=https://enugu-monitor-revamp.vercel.app/content/"+post.slug}`}><i className="fa fa-facebook"></i><span>Share on Facebook</span></a></li>
 							<li><a className="twitter" href="#"><i className="fa fa-twitter"></i><span>Share on Twitter</span></a></li>
 							<li><a className="google" href="#"><i className="fa fa-google-plus"></i></a></li>
 							<li><a className="linkedin" href="#"><i className="fa fa-linkedin"></i></a></li>
