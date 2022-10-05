@@ -4,6 +4,7 @@ import Pages from '../route'
 import Axios from '../util/Axios'
 import useContent from '../util/useContext'
 import { sortByDate } from '../util/Utils'
+import Head from './Head/head'
 
 function Layout() {
 	const { content, setContent } = useContent()
@@ -34,6 +35,7 @@ function Layout() {
 	},[setContent])
   return (
     <>
+		<Head title="Homepage" />
         <header className="clearfix style-4">
 		<div className="top-line">
 				<div className="container">

@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import { dateFormatter } from '../util/Utils'
 import { FeaturedCarousel } from '../components/Cards'
 import Widget from '../components/Widget'
+import Head from './Head/head'
 
 function Post() {
     const {content} = useContent()
@@ -27,9 +28,18 @@ function Post() {
             }
         })
     }, [content, slug])
+
+    
     
   return (
     <>
+        <Head   
+            title={post?.seo?.title ? post.seo.title : ""}
+            desc={post?.seo?.description ? post.seo.description : ""}
+            image={post?.image ? post.image : ""}
+            url={`${"https://enugu-monitor-revamp.vercel.app/content"+post?.slug}`}
+            type="Website"
+        />
         <div className="row">
             <div className="col-lg-8">
                  <div className="single-post">

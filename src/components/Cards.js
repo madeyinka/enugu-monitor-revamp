@@ -80,7 +80,7 @@ export const CarouselWidget = ({data}) => {
                         {data.map((item, index) => {
                             return (
                                 <>
-                                    <li className="slide-widget active">
+                                    <li className="slide-widget active" key={index}>
                                         <img alt={item.slug} src={item.image} />
                                         <div className="slider-caption">
                                             <a href={"/category/"+item.category.label} className="category category-tech">{item.category.label}</a>
