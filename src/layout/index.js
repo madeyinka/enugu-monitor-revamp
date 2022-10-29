@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { TileCard } from '../components/Cards'
+import { CarouselWidget, TileCard } from '../components/Cards'
 import Pages from '../route'
 import Axios from '../util/Axios'
 import useContent from '../util/useContext'
@@ -10,6 +10,7 @@ function Layout() {
 	const { content, setContent } = useContent()
     const _date = new Date().toDateString()
 	const popular = content?.filter((item) => item.post_settings.popular && item.status).slice(0,3)
+	const editor = content?.filter((item) => item.post_settings.editor && item.status).slice(0,1)
 	useEffect(() => {
 		let isMounted = true
 		const controller = new AbortController()
@@ -140,7 +141,8 @@ function Layout() {
                         <div className="col-lg-3 col-md-6">
 							<div className="footer-widget featured-widget">
 								<h1>Featured Post</h1>
-								<div className="news-post standart-post">
+								<CarouselWidget data={editor} />
+								{/* <div className="news-post standart-post">
 									<div className="post-image">
 										<a href="single-post">
 											<img src="../assets/upload/blog/s15.jpg" alt="" />
@@ -148,7 +150,7 @@ function Layout() {
 										<a href="#" className="category">Tennis</a>
 									</div>
 									<h2><a href="single-post.html">Visiting antic countries is John Doe hobby.</a></h2>
-								</div>
+								</div> */}
 
 							</div>
 						</div>

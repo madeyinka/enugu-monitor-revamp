@@ -6,6 +6,7 @@ export const GlobalProvider = ({children}) => {
 
     const [content, setContent] = useState([])
     const [categories, setCategories] = useState([])
+    const [components, setComponents] = useState([]) 
 
-    return (<GlobalContext.Provider value={{content, setContent, categories, setCategories}}>{children}</GlobalContext.Provider>)
+    return (<GlobalContext.Provider value={{content, setContent, categories, setCategories, components, setComponents}}>{children}</GlobalContext.Provider>)
 }
