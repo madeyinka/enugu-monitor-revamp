@@ -36,7 +36,7 @@ function Post() {
         <Head   
             title={post?.seo?.title ? post.seo.title : ""}
             desc={post?.seo?.description ? post.seo.description : ""}
-            image={post?.image ? post.image : ""}
+            image={"https://www.hightowerandhightower.com/wp-content/uploads/2019/06/hightower-lawyers-1-256x256.png"}
             url={`${"https://enugu-monitor-revamp.vercel.app/content"+post?.slug}`}
             type="Website"
         />
