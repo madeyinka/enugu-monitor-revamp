@@ -5,7 +5,7 @@ function Head({...props}) {
   return (
     <Helmet>
         <title>{props.title} - News, Journals, Lifestyle, Politics, Busniess, Sport</title>
-        <meta property="og:title" content="meta-title"/>
+        <meta property="og:title" content="Post Title"/>
         <meta property="og:description"   content="Site Description" />
         <meta property="og:image" content={props.image} />
         <meta property="og:url" content={props.url} />
