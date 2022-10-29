@@ -34,8 +34,8 @@ function Post() {
   return (
     <>
         <Head   
-            title={post?.title ? post?.title.slice(0,35) : ""}
-            desc={post?.seo?.description ? post?.seo.description : post?.title.slice(0, 35)}
+            title={post?.title ? post?.title.slice(0,35) : "Post Title"}
+            desc={post?.seo?.description ? post?.seo.description : "Post Description"}
             image="https://www.hightowerandhightower.com/wp-content/uploads/2019/06/hightower-lawyers-1-256x256.png"
             url={`${"https://enugu-monitor-revamp.vercel.app/content"+post?.slug}`}
             type="Website"
