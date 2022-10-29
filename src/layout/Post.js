@@ -34,7 +34,7 @@ function Post() {
   return (
     <>
         <Head   
-            title={post?.seo?.title ? post.seo.title : "Enugu Monitor"}
+            title={post?.seo?.title ? post.seo.title : "LAWYERS SEEK RETURN OF FORFEITED ASSETS TO ENUGU, THANK BUHARI FOR SNUBBING PETER MBAH’S TANK FARM LAUNCH"}
             desc={post?.seo?.description ? post.seo.description : "Content Description"}
             image="https://www.hightowerandhightower.com/wp-content/uploads/2019/06/hightower-lawyers-1-256x256.png"
             url={`${"https://enugu-monitor-revamp.vercel.app/content"+post?.slug}`}
